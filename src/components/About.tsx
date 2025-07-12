@@ -3,11 +3,8 @@ import { Card, CardContent } from "@/components/ui/card";
 const About = () => {
   const stats = [
     { number: "20+", label: "Projects Completed" },
-    { number: "160+", label: "LeetCode Problems Completed" },
-    { number: "5+", label: "Certifications Earned" }
-
-
-  
+    
+    { number: "1", label: "Certifications Earned" }
   ];
 
   return (
@@ -27,17 +24,16 @@ const About = () => {
           <div className="space-y-6 animate-slide-in-left">
             <div className="space-y-4 text-lg leading-relaxed text-muted-foreground">
               <p>
-                I'm a passionate <span className="text-primary font-semibold">AI enthusiast</span> and <span className="text-primary font-semibold">full-stack developer</span> driven by the desire to build intelligent and impactful digital solutions. My journey began with a curiosity for how software works and has grown into hands-on expertise across web development, machine learning, and backend engineering.
-
+                I'm a results-driven <span className="text-primary font-semibold">Data Analyst, Software Engineer, AI Analyst</span> and <span className="text-primary font-semibold">Full-Stack Developer</span> with hands-on experience in building intelligent solutions that solve real-world problems. During my internship at IBM, I harnessed the power of cognitive computing and machine learning to extract insights from large datasets, demonstrating strong analytical and problem-solving abilities.
               </p>
-            
+              
               <p>
-                When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or building side projects. I believe in continuous learning and sharing knowledge with the community.
+                With a foundation in web development and a passion for AI, I've developed multiple impactful projects — from real-time drowsiness detection systems to advanced brain tumor diagnosis using CNNs. I thrive on challenges and believe in continuous learning, often diving into open-source contributions and competitive programming to sharpen my skills.
               </p>
             </div>
             
             <div className="flex flex-wrap gap-3 pt-4">
-              {["Python", "Data Structures", "OOPs", "SQL", "AI", "ML", "AWS"].map((tech) => (
+              {["Python", "Data Structures", "OOPs", "SQL", "AI", "ML", "Java","PowerBi", "Tableau", "HTML", "CSS", "JavaScript", "React", "Node.js", "Mongo DB"].map((tech) => (
                 <span 
                   key={tech}
                   className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20"

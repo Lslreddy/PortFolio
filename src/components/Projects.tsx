@@ -33,16 +33,7 @@ const Projects = () => {
       live: "",
       featured: false
     },
-    {
-      id: 4,
-      title: "Typing Speed Test",
-      description:
-        "A responsive app to measure typing speed and accuracy with real-time feedback, WPM tracking, and personalized tips.",
-      technologies: ["HTML", "CSS", "JavaScript"],
-      github: "https://github.com/SaiBharath28/typing-speed-test",
-      live: "",
-      featured: false
-    },
+    
     {
       id: 5,
       title: "AI Code Review Application",
@@ -52,8 +43,40 @@ const Projects = () => {
       github: "https://github.com/SaiBharath28/AI-Code-Review",
       live: "https://ai-code-review-vgwg.onrender.com",
       featured: true
+    },
+    {
+      id: 6,
+      title: "Intrusion Detection with NSL-KDD",
+      description:
+        "Built ML models like Random Forest and Neural Networks to detect network intrusions using the NSL-KDD dataset, optimizing hyperparameters and comparing results across six cases.",
+      technologies: ["Python", "Sklearn", "XGBoost", "Pandas"],
+      github: "",
+      live: "",
+      featured: false
+    },
+    {
+      id: 7,
+      title: "Brain Tumor Detection using CNNs",
+      description:
+        "Developed a CNN-based diagnostic system to detect and classify brain tumors from MRI scans with high accuracy, using image preprocessing and normalization.",
+      technologies: ["Python", "TensorFlow", "Keras", "OpenCV"],
+      github: "",
+      live: "",
+      featured: false
+    },
+    {
+      id: 8,
+      title: "Drowsiness Detection System",
+      description:
+        "Real-time driver alertness monitor using computer vision and facial landmark detection to reduce road accidents. Built with OpenCV and Dlib.",
+      technologies: ["Python", "OpenCV", "Dlib"],
+      github: "",
+      live: "",
+      featured: false
     }
   ];
+
+  const githubProfile = "https://github.com/Lslreddy";
 
   return (
     <section id="projects" className="py-20 relative">
@@ -106,7 +129,12 @@ const Projects = () => {
                     size="sm"
                     variant="outline"
                     className="border-white text-white hover:bg-white hover:text-black"
-                    onClick={() => window.open(project.github, "_blank")}
+                    onClick={() =>
+                      window.open(
+                        project.github ? project.github : githubProfile,
+                        "_blank"
+                      )
+                    }
                   >
                     Code
                   </Button>
@@ -120,9 +148,7 @@ const Projects = () => {
         <div className="text-center mt-16">
           <Button
             className="glow-button text-lg px-8 py-6"
-            onClick={() =>
-              window.open("https://github.com/SaiBharath28?tab=repositories", "_blank")
-            }
+            onClick={() => window.open(githubProfile, "_blank")}
           >
             View All Projects on GitHub
           </Button>

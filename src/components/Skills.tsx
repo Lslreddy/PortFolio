@@ -5,13 +5,13 @@ const Skills = () => {
     {
       title: "Languages & Concepts",
       icon: "🎨",
-      skills: ["Python", "MySQL", "Data Structures", "OOP", "HTML", "CSS", "JavaScript"],
+      skills: ["Python", "MySQL", "Data Structures", "OOP", "HTML", "CSS", "JavaScript", "Java"],
       color: "primary"
     },
     {
       title: "AI & Machine Learning",
       icon: "🧠",
-      skills: ["Machine Learning", "Deep Learning", "NLP", "Scikit-learn", "Hugging Face", "NumPy", "Pandas", "Matplotlib"],
+      skills: ["Machine Learning", "Deep Learning", "NLP", "Scikit-learn", "Hugging Face", "NumPy", "Pandas", "Matplotlib", "TensorFlow", "Keras", "PyTorch"],
       color: "accent"
     },
     {
@@ -23,19 +23,19 @@ const Skills = () => {
     {
       title: "DevOps & Tools",
       icon: "🚀",
-      skills: ["Git", "GitHub", "Git Bash", "Render", "CI/CD", "Agile", "SDLC"],
+      skills: ["Git", "GitHub", "Git Bash", "Agile", "SDLC"],
       color: "accent"
     },
     {
       title: "Data & Visualization",
       icon: "📊",
-      skills: ["Power BI", "Looker"],
+      skills: ["Power BI", "Tableau"],
       color: "primary"
     },
     {
       title: "Platforms & IDEs",
       icon: "💻",
-      skills: ["VS Code", "PyCharm", "Google Colab", "Jupyter Notebook"],
+      skills: ["VS Code", "PyCharm", "Google Colab", "Jupyter Notebook", "IntelliJ IDEA"],
       color: "accent"
     },
     {
@@ -51,10 +51,9 @@ const Skills = () => {
   { name: "Git & GitHub", level: 90, icon: "🔧" },
   { name: "Google Colab / Jupyter", level: 85, icon: "📘" },
   { name: "Power BI", level: 85, icon: "📊" },
-  { name: "PyCharm", level: 80, icon: "🧰" },
+  { name: "PyCharm", level: 85, icon: "🧰" },
   { name: "Hugging Face", level: 80, icon: "🤗" },
-  { name: "Render", level: 75, icon: "🌐" },
-  { name: "Slack / Teams", level: 75, icon: "💬" }
+  { name: "Tableau", level: 80, icon: "📊" }
 ];
 
   return (

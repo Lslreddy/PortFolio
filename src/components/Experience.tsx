@@ -3,49 +3,48 @@ import { Card, CardContent } from "@/components/ui/card";
 const Experience = () => {
   const experiences = [
     {
-    company: "NxtWave",
-    position: "Software Development Faculty Trainee",
-    period: "June 2025 – Present",
-    location: "India (Hyderbad)",
-    description: "Undergoing intensive training in backend development while contributing to content creation and mentoring preparation. Building scalable server-side applications with real-world projects and hands-on backend logic.",
-    achievements: [
-      "Training in Python, Node.js, SQL, MongoDB, scalable server-side apps, API development, backend logic, and database integration.",
-      "Preparing to deliver backend content in university.",
-      "Responsible for backend projects, assessments, and content creation."
-    ],
-    technologies: ["Python", "Node.js", "SQL", "MongoDB", "Git", "CI/CD"],
-    type: "full-time"
-  },
-  {
-    company: "Cyber Security Internship+",
-    position: "Cybersecurity Intern",
-    period: "May 2023 – July 2023",
-    location: "India (Remote)",
-    description: "Gained practical experience in cybersecurity through real-world simulations involving threat detection, anomaly analysis, and system hardening techniques.",
-    achievements: [
-      "Applied KNN Classifier and Decision Trees for anomaly detection and threat analysis",
-      "Conducted vulnerability assessments and strengthened system security protocols",
-      "Explored encryption techniques and network security frameworks"
-    ],
-    technologies: ["Python", "KNN", "Decision Trees", "Encryption", "Cybersecurity Tools"],
-    type: "internship"
-  }
-
+      company: "NxtWave",
+      position: "Frontend Development Faculty Trainee",
+      period: "May 2025 – Present",
+      location: "India (Hyderabad)",
+      description:
+        "Currently undergoing immersive training in frontend development. Actively contributing to curriculum design and project mentoring while developing interactive web interfaces using modern frontend technologies.",
+      achievements: [
+        "Hands-on experience with HTML, CSS, JavaScript, and React.js",
+        "Creating high-quality frontend content and real-world UI projects",
+        "Mentoring students and assisting in frontend skill-building assessments"
+      ],
+      technologies: ["HTML", "CSS", "JavaScript", "React", "Git", "Responsive Design"],
+      type: "full-time"
+    },
+    {
+      company: "IBM Cognitive AI",
+      position: "AI Analyst Intern",
+      period: "June 2024 – July 2024",
+      location: "India (Remote)",
+      description:
+        "Contributed to AI-driven solutions by leveraging IBM Watson for analyzing large datasets and producing actionable insights. Applied machine learning algorithms to optimize performance in real-world applications.",
+      achievements: [
+        "Utilized machine learning models for data analysis and process optimization",
+        "Worked on extracting cognitive insights using IBM Watson’s AI platform",
+        "Delivered data-driven reports enhancing business intelligence"
+      ],
+      technologies: ["Python", "ML", "IBM Watson", "Pandas", "Data Analysis"],
+      type: "internship"
+    }
   ];
 
   const education = [
     {
-  institution: "Vellore Institute of Technology, Vellore",
-  degree: "M.Tech Integrated in Software Engineering",
-  period: "2020 – 2025",
-  gpa: "CGPA: 7.73",
-  highlights: [
-    "Specialized in AI, Machine Learning, and Full-Stack Development",
-    "Completed major projects in Deep Learning and NLP-based Healthcare",
-    "Active participant in IEEE Summer School on AI & IoT"
-  ]
-}
-
+      institution: "Vellore Institute of Technology, Vellore",
+      degree: "M.Tech Integrated in Software Engineering",
+      period: "2020 – 2025",
+      gpa: "CGPA: 8.27",
+      highlights: [
+        "Specialized in AI, Machine Learning, and Full-Stack Development",
+        "Completed major projects in Deep Learning , NLP-based , Machine Learning and Data Mining",
+      ]
+    }
   ];
 
   return (
@@ -59,7 +58,7 @@ const Experience = () => {
             My professional journey and academic background
           </p>
         </div>
-        
+
         {/* Experience Timeline */}
         <div className="mb-20">
           <h3 className="text-2xl font-bold text-center mb-12 text-foreground">
@@ -68,20 +67,20 @@ const Experience = () => {
           <div className="relative">
             {/* Timeline Line */}
             <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-primary via-accent to-primary rounded-full opacity-20" />
-            
+
             {experiences.map((exp, index) => (
-              <div 
+              <div
                 key={index}
                 className={`relative flex items-center mb-16 last:mb-0 animate-fade-in-up ${
-                  index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
+                  index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
                 }`}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Timeline Dot */}
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-primary rounded-full border-4 border-background shadow-glow z-10" />
-                
+
                 {/* Content Card */}
-                <div className={`w-full lg:w-5/12 ${index % 2 === 0 ? 'lg:pr-8' : 'lg:pl-8'}`}>
+                <div className={`w-full lg:w-5/12 ${index % 2 === 0 ? "lg:pr-8" : "lg:pl-8"}`}>
                   <Card className="glass-card hover:shadow-glow transition-all duration-500 group">
                     <CardContent className="p-6">
                       <div className="flex items-start justify-between mb-4">
@@ -97,21 +96,21 @@ const Experience = () => {
                             {exp.period}
                           </span>
                           <div className="mt-2">
-                            <span className={`inline-block px-2 py-1 text-xs font-medium rounded-full ${
-                              exp.type === 'full-time' 
-                                ? 'bg-primary/10 text-primary border border-primary/20'
-                                : 'bg-accent/10 text-accent border border-accent/20'
-                            }`}>
-                              {exp.type === 'full-time' ? 'Full-time' : 'Freelance'}
+                            <span
+                              className={`inline-block px-2 py-1 text-xs font-medium rounded-full ${
+                                exp.type === "full-time"
+                                  ? "bg-primary/10 text-primary border border-primary/20"
+                                  : "bg-accent/10 text-accent border border-accent/20"
+                              }`}
+                            >
+                              {exp.type === "full-time" ? "Full-time" : "Internship"}
                             </span>
                           </div>
                         </div>
                       </div>
-                      
-                      <p className="text-muted-foreground mb-4 leading-relaxed">
-                        {exp.description}
-                      </p>
-                      
+
+                      <p className="text-muted-foreground mb-4 leading-relaxed">{exp.description}</p>
+
                       <div className="space-y-2 mb-4">
                         {exp.achievements.map((achievement, achIndex) => (
                           <div key={achIndex} className="flex items-start space-x-2">
@@ -120,7 +119,7 @@ const Experience = () => {
                           </div>
                         ))}
                       </div>
-                      
+
                       <div className="flex flex-wrap gap-2">
                         {exp.technologies.map((tech, techIndex) => (
                           <span
@@ -138,15 +137,13 @@ const Experience = () => {
             ))}
           </div>
         </div>
-        
+
         {/* Education */}
         <div>
-          <h3 className="text-2xl font-bold text-center mb-12 text-foreground">
-            Education
-          </h3>
+          <h3 className="text-2xl font-bold text-center mb-12 text-foreground">Education</h3>
           <div className="max-w-4xl mx-auto">
             {education.map((edu, index) => (
-              <Card 
+              <Card
                 key={index}
                 className="glass-card hover:shadow-accent-glow transition-all duration-500 animate-fade-in-up"
               >
@@ -163,7 +160,7 @@ const Experience = () => {
                       </span>
                     </div>
                   </div>
-                  
+
                   <div className="space-y-2">
                     {edu.highlights.map((highlight, highlightIndex) => (
                       <div key={highlightIndex} className="flex items-start space-x-2">

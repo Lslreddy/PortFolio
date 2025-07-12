@@ -19,34 +19,39 @@ const Contact = () => {
     {
       icon: "📧",
       label: "Email",
-      value: "saibharath282002@gmail.com",
-      link: "mailto:saibharath282002@gmail.com"
+      value: "leelasai162@gmail.com",
+      link: "mailto:leelasai162@gmail.com"
     },
     {
       icon: "📱",
       label: "Phone",
-      value: "+91 7032943252",
-      link: "tel:+917032943252"
+      value: "+91 9390685219",
+      link: "tel:+919390685219"
     },
     {
       icon: "📍",
       label: "Location",
-      value: "Hyderbad, Telangana, India",
+      value: "Hyderabad, Telangana, India",
       link: null
     },
     {
       icon: "💼",
       label: "LinkedIn",
-      value: "linkedin.com/in/sai-bharath-balam-4500b02b2",
-      link: "https://linkedin.com/in/sai-bharath-balam-4500b02b2"
+      value: "linkedin.com/in/leela-sai-b7a906245",
+      link: "https://linkedin.com/in/leela-sai-b7a906245"
     }
   ];
 
   const socialLinks = [
     {
       platform: "GitHub",
-      url: "https://github.com/SaiBharath28",
+      url: "https://github.com/Lslreddy",
       icon: "💻"
+    },
+    {
+      platform: "LinkedIn",
+      url: "https://linkedin.com/in/leela-sai-b7a906245",
+      icon: "🔗"
     }
   ];
 
@@ -230,7 +235,17 @@ const Contact = () => {
                 </div>
               </CardContent>
             </Card>
-            
+
+            {/* Personal Note */}
+            <Card className="glass-card border-primary/20">
+              <CardContent className="p-6">
+                <h4 className="text-xl font-semibold text-foreground mb-2">Let’s Collaborate 🤝</h4>
+                <p className="text-muted-foreground text-sm">
+                  Whether it's an AI-powered solution, full-stack web app, or a challenging data-driven idea — I'm excited to work on innovative projects and collaborate with passionate people. Let’s build something impactful!
+                </p>
+              </CardContent>
+            </Card>
+
             {/* Availability Status */}
             <Card className="glass-card border-accent/20">
               <CardContent className="p-6">

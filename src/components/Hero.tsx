@@ -64,7 +64,7 @@ const Hero = () => {
                 👋 Hello, I'm
               </p>
               <h1 className="text-5xl lg:text-7xl font-bold gradient-text">
-                Balam Venkata Sai Bharath
+                Thandava Leela Sai Lashman Reddy
               </h1>
               <div className="text-2xl lg:text-3xl font-semibold text-muted-foreground">
                 <span className="typing-cursor">{displayText}</span>
